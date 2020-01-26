@@ -38,6 +38,28 @@
 		document.write(age);
 		document.write('<br>');
 		document.write(contactNumber);
+		
+		/*
+		   array implementation , create a single array to hold 
+		   studentName, age, userNumber and contactNumber
+		*/
+		var studentDetails = new Array();//convert variable to an array
+		
+		studentDetails[0] = window.prompt('Your Name');
+		studentDetails[1] = window.prompt('Your Age');
+		studentDetails[2] = window.prompt('Your Contact Number');
+		studentDetails[3] = regionCode + studentDetails[2];
+
+		//array printing in console
+		console.log(studentDetails);//print full array
+		document.write('<hr>');
+		document.write(studentDetails[0]);
+		document.write('<br>');
+		document.write(studentDetails[1]);
+		document.write('<br>');
+		document.write(studentDetails[3]);
+		document.write('<br>');
+
 	</script>
 </body>
 </html>
