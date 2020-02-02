@@ -23,7 +23,51 @@
 		var count2 = 200;
 		var total = count1 + count2;//since two variables are number datatype will be addition operation
 		//+ below acts as a concatination
-		document.write('total value is ' + total);
+		document.write('total value is ' + total); //since one side is string * will act as a concatination operation
+		var count3 = 500;
+		var final_value1 = count3 - total;//substraction operation
+		
+		document.write('<hr> final value 1 is' + final_value1);//200
+		var final_value2 = (final_value1 * count1)/count2;
+		document.write('<hr> final value 2 is' + final_value2);//100
+		//applying modulus
+		var remainderValue = final_value2 % final_value2;
+		
+		document.write('<hr> remainder is' + remainderValue);//0
+		
+		//finding given value is odd or even number
+		var input = 200;
+		var result = input % 2;
+		document.write('<hr> result ' + result + '<br>');
+		//selection done base on result variable value if result is equal to 0 print event number string else string else print odd number string
+		document.write((result == 0) ? 'even number' : 'odd number');
+		
+		//using comparison operators
+		//once comparison is perform we can get a boolean result (true or false)
+		document.write('<hr>' + (count1 > count2)); //false
+		document.write('<hr>' + (count1 < count2)); //true
+		document.write('<hr>' + (100 >= 100)); //true
+		document.write('<hr>' + (200 >= 200)); //true
+		document.write('<hr>' + (count1 == count2)); //false
+		document.write('<hr>' + (100 == 200)); //false
+		document.write('<hr>' + ('100' === 100)); //false since first one is a string and second a number
+		document.write('<hr>' + (100 != 200)); //true
+		
+		//using logical operators
+		   //logical operators will use when there is a need for validate multiple comparison operators
+		//using AND operator - all the inputs need to be true for and operator to set final result TRUE.
+		document.write('<hr> using AND' + ((count1 > count2) && (count1 < count2)));//false
+		document.write('<hr> using AND' + ((100 != 200) && (count1 < count2)));//true
+		//using OR operator - either one input need to true or operator to set final result TRUE.
+		document.write('<hr> using OR' + ((count1 > count2) || (count1 < count2)));//false
+		document.write('<hr> using OR' + ((100 != 200) || (count1 < count2)));//true
+		//NOT operator will convert the result into its opposite
+		document.write('<hr> NOT operator ' + !((count1 > count2) && (count1 < count2)));
+
+		
+
+
+		
 	</script>
 </body>
 </html>
