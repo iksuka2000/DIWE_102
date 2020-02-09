@@ -38,8 +38,11 @@
 	var mark;
 		
 	mark = window.prompt('Enter mark');
-
-	if(mark >=75){
+	
+    //check if the user provides a number between 0 & 100
+	if (mark>=0 && mark<=100)
+	{
+		if(mark >=75){
 	   document.write('Grade is A');
 	   }else if (mark>=65){
 	    document.write('Grade is B');
@@ -50,6 +53,14 @@
 	   }else{
 		document.write('Grade is F');	
 	   }
+	}
+	else
+	{
+		//document.write('Mark is invalid. Please try again');
+		alert('mark should be between 0 and 100');
+	}
+
+	
 	</script>
 </body>
 </html>
