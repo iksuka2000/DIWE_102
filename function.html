@@ -47,9 +47,36 @@
 	  //document.write(total + '<br>');
 	  return total;
 	}
-	function average(arg1){
-		var finalAverage = arg1/2;
+	function average(arg1,arg2){
+		var finalAverage = arg1/arg2;
 		return finalAverage;
+	}
+	
+	function getGrade(arg1){
+		var gradeArray = new Array();
+		//code to get grade
+		for(index in arg1){
+			if (arg1[index]>=75){
+			//return "A";
+		    gradeArray[index] = "A";
+		}
+		else if (arg1[index]>=65){
+			//return "B";
+		    gradeArray[index] = "B";
+		}
+		else if (arg1[index]>=55){
+			//return "C";
+			gradeArray[index] = "C";
+		}else if (arg1[index]>=45){
+			//return "S";
+			gradeArray[index] = "S";
+		}else{
+			//return "F";
+			gradeArray[index] = "F";
+		}
+		}
+		return gradeArray;
+		
 	}
 		
 	//run this function two times
@@ -60,7 +87,17 @@
 		
 	var myTotal = count(30,50);
 	document.write('Total is -' + myTotal);
-	document.write('Average is' + average(myTotal));
+	document.write('Average is' + average(myTotal,2)); //can modify 2 to 3 to get average by 3
+	document.write('<hr>');	
+		
+	var marksArray = new Array();
+	marksArray[0] = 50;
+	marksArray[1] = 80;
+	marksArray[2] = 65;
+	marksArray[3] = 70;
+	marksArray[4] = 80;
+	marksArray[5] = 30;
+	document.write('Grade is -' + getGrade(marksArray));
 	</script>
 </body>
 </html>
