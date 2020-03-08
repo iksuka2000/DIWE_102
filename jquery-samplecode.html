@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<!--load jquery file to the border-->
+	<script src="jquery-3.4.1.js"></script>
+</head>
+
+<body>
+	
+	<h1>This is a heading</h1>
+	<p>this is a paragraph</p>
+	<hr>
+</body>
+	<script>
+		//jquery ready method will wait till the DOM 100% complete
+		$(document).ready(function(){
+			var valueHead = $('h1').text();
+            var valuePara = $('p').text();
+            //document.write(valueHead);
+			console.log(valuePara);
+
+		}
+		);
+		
+//	//get jquery object select h1 tag and get inner text
+//	var valueHead = $('h1').text();
+//	var valuePara = $('p').text();
+//	document.write(valueHead);
+//	console.log(valuePara);
+//		//normal function syntax
+//		function count(){
+//			
+//		}
+//		count();
+//		
+//		//using annonymous function.
+//		var mycode = function(){
+//			return "ready";
+//		}
+//		
+//		document.write(mycode);
+	
+	</script>
+</html>
